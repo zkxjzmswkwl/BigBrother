@@ -70,25 +70,6 @@ public final class Imaging {
         }
     }
 
-    // TODO: Profile this because it's most certainly not performant.
-    public static < T > T scaleImage(T image, int width, int height) {
-        T ret;
-        if (image instanceof BufferedImage bi) {
-            ret = (T)convertToMat(bi);
-        } else {
-            ret = (T)image;
-        }
-
-        Size size = new Size(width, height);
-        Imgproc.resize((Mat)ret, (Mat)ret, size, 2, 2, Imgproc.INTER_AREA);
-
-        if (image instanceof BufferedImage) {
-            return (T)Imaging.convertToBufferedImage((Mat)ret);
-        } else {
-            return ret;
-        }
-    }
-
     public static BufferedImage imageScreen(Rectangle screenRect, boolean useGray, boolean useThreshold) {
         // Capture rectangle of screen using rectangle object we just constructed
         BufferedImage capture = SRobot.getRobot().createScreenCapture(screenRect);
