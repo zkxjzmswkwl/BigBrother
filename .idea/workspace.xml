@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98e2fdd0-44d6-44cb-890a-8be8770dc8fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/BoofPack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/DadeMurphy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/carter/Imaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/carter/Imaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/carter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/carter/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,26 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="software.carter.App" />
+      <module name="BigBrother" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="software.carter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652971602093</updated>
-      <workItem from="1652971604170" duration="815000" />
+      <workItem from="1652971604170" duration="1266000" />
     </task>
     <servers />
   </component>
