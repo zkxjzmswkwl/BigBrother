@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98e2fdd0-44d6-44cb-890a-8be8770dc8fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/DadeMurphy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/Tess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/overwatch/structures/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/overwatch/structures/Match.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/overwatch/structures/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/carter/overwatch/structures/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/software/carter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/carter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/carter/DadeMurphy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/carter/DadeMurphy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/carter/Imaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/carter/Imaging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +27,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/4.5.1-2/opencv-4.5.1-2-sources.jar!/org/opencv/imgproc/Imgproc.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,10 +52,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager">
@@ -74,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652971602093</updated>
-      <workItem from="1652971604170" duration="1266000" />
+      <workItem from="1652971604170" duration="15132000" />
     </task>
     <servers />
   </component>
@@ -91,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

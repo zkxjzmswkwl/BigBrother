@@ -131,6 +131,24 @@ public final class Imaging {
                 color.getBlue()  <= b +  range);
     }
 
+    public static < T > T scaleImage(T image, int width, int height) {
+        T ret;
+        if (image instanceof BufferedImage bi) {
+            ret = (T)convertToMat(bi);
+        } else {
+            ret = (T)image;
+        }
+
+        Size size = new Size(width, height);
+        Imgproc.resize((Mat)ret, (Mat)ret, size, 2, 2, Imgproc.INTER_AREA);
+
+        if (image instanceof BufferedImage) {
+            return (T)Imaging.convertToBufferedImage((Mat)ret);
+        } else {
+            return ret;
+        }
+    }
+
     public static BufferedImage customThreshold(BufferedImage image, int range, int... rgb) {
         for (int x = 0; x <= image.getWidth() - 1; x++)
         {
@@ -163,5 +181,44 @@ public final class Imaging {
     public static Color getColorAt(BufferedImage image, int x, int y) {
         int pixel = image.getRGB(x, y);
         return new Color(pixel, true);
+    }
+
+    private static boolean inRange(Color color, int... rgb) {
+        return (
+                color.getRed() >= rgb[0] - rgb[3]   &&
+                color.getRed() <= rgb[0] + rgb[3]   &&
+                color.getGreen() >= rgb[1] - rgb[4] &&
+                color.getGreen() <= rgb[1] + rgb[4] &&
+                color.getBlue() >= rgb[2] - rgb[5]  &&
+                color.getBlue() <= rgb[2] + rgb[5]);
+    }
+
+    public static BufferedImage thresh(BufferedImage image, int... rgb) {
+        for (int x = 0; x <= image.getWidth() - 1; x++)
+        {
+            for (int y = 0; y <= image.getHeight() - 1; y++)
+            {
+                int pixel = image.getRGB(x, y);
+                Color color = new Color(pixel, true);
+
+                // If the current pixel matches, set it to black.
+                // If not, set it to green. This produces **great** ocr results.
+                if (rgb.length < 5) {
+                    if (inRange(color, rgb)) {
+                        image.setRGB(x, y, 0x000000);
+                    } else {
+                        image.setRGB(x, y, 0x00FF00);
+                    }
+                } else {
+                    if (inRange(color, rgb) ||
+                            inRange(color, rgb)) {
+                        image.setRGB(x, y, 0x000000);
+                    } else {
+                        image.setRGB(x, y, 0x00FF00);
+                    }
+                }
+            }
+        }
+        return image;
     }
 }

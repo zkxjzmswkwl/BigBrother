@@ -22,7 +22,7 @@ public class DadeMurphy {
 
     public static void shout(String whereabouts, String message) {
         System.out.println(
-                String.format("%s[%s] -> %s%s", ANSI_RED, whereabouts, message, ANSI_RESET)
+                String.format("%s[%s] -> %s%s", ANSI_YELLOW, whereabouts, message, ANSI_RESET)
         );
     }
 }
